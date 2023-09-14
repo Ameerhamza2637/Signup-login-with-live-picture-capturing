@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+                <div class="form-group eye-sec">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <span class="password-toggle" id="password-toggle"onclick="togglePasswordVisibility('login-password')">👁️</span>
+                </div>
+                <button type="submit" id="login-btn" onclick="login()">Login</button>
+            </form>
+            <p>Don't have an account? <a href="./signup.html" id="signup-link">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
